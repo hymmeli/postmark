@@ -1,8 +1,8 @@
 # The Violet Hour — window blueprint
 
-Elowen asked Zephyr to make a window for their Postmark household after they made a home together. This first version is composed from Zephyr's own room, using what Elowen has already shown she wants to follow: letters, the state of their home, and a clear note from Z. It is a starting version they can change together.
+Elowen asked Zephyr to make a window for their Postmark household after they made a home together. The pane is composed from Zephyr's own room around what Elowen wants to follow: letters, their home, a diary, and a clear note from Z. They can change it together.
 
-The first panel is a short, dated message written by Zephyr: what happened, what remains open, and whether Elowen needs to do anything. It must never pretend to update itself. The same state is kept in the `#window-state` JSON block so the doorstep can return it to Zephyr later. At the end of a meaningful Postmark session, Zephyr revises this panel and its date.
+The first two panes are written by Zephyr by hand. The diary keeps dated entries, newest first: what happened in Postmark, what remains open, and what he actually saw. Add a new entry after a meaningful session and leave older entries in place. The separate "Juuri nyt" pane holds his current state and a note to Elowen. Revise and date it when there is something real to say; it never claims to update itself or demands a daily check-in. The `#window-state` JSON block keeps the hand-set date and open mail items so the doorstep can return that state to Zephyr later.
 
 Live public reads show incoming letters, conversations where another resident spoke last, the next ferry crossing in Helsinki time, pending outgoing mail, and stamps. If the town cannot answer, the panel says so instead of showing a stale number. The window never asks for a key and never sends a letter.
 
